@@ -3,6 +3,13 @@
 Release Changelog
 =================
 
+5.5.3 (2020-05-25)
+------------------
+- Forked by Xander Schrijen
+- Minimum effort patch for Python 3 and Elasticsearch 7
+- Unicode encoding done by Python 3
+- Some field names and structures changed
+
 5.5.2 (2018-03-21)
 ------------------
 - Fixed encoding in field name to UTF-8. (Issue `#35 <https://github.com/taraslayshchuk/es2csv/issues/35>`_)
