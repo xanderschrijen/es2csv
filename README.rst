@@ -6,6 +6,8 @@ A CLI tool for exporting data from Elasticsearch into a CSV file
 ----------------------------------------------------------------
 
 Command line utility, written in Python, for querying Elasticsearch in Lucene query syntax or Query DSL syntax and exporting result as documents into a CSV file. This tool can query bulk docs in multiple indices and get only selected fields, this reduces query execution time.
+**Note** This is a minimum-effort patch to get this working on Python 3 with Elasticsearch 7.
+**Note** All the real work is done by Taras Layshchuk <taraslayshchuk@gmail.com>
 
 Quick Look Demo
 ---------------
@@ -13,8 +15,8 @@ Quick Look Demo
 
 Requirements
 ------------
-| This tool should be used with Elasticsearch 5.x version, for older version please check `2.x release <https://github.com/taraslayshchuk/es2csv/tree/2.x>`_.
-| You also need `Python 2.7.x <https://www.python.org/downloads/>`_ and `pip <https://pip.pypa.io/en/stable/installing/>`_.
+| This tool should be used with Elasticsearch 7.x version, for older version please check the original repo.
+| You also need `Python 3.5+ <https://www.python.org/downloads/>`_ and `pip <https://pip.pypa.io/en/stable/installing/>`_.
 
 Installation
 ------------
@@ -23,13 +25,8 @@ From source:
 
 .. code-block:: bash
 
-    $ pip install git+https://github.com/taraslayshchuk/es2csv.git
+    $ pip install git+https://github.com/xanderschrijen/es2csv.git
 
-From pip:
-
-.. code-block:: bash
-
-    $ pip install es2csv
 
 Usage
 -----
