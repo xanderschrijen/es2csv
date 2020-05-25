@@ -113,7 +113,7 @@ class Es2csv:
 
         if '_all' not in self.opts.fields:
             search_args['_source_includes'] = ','.join(self.opts.fields)
-            self.csv_headers.extend(field for field in self.opts.fields if '*' not in field])
+            self.csv_headers.extend([field for field in self.opts.fields if '*' not in field])
 
         if self.opts.debug_mode:
             print('Using these indices: {}.'.format(', '.join(self.opts.index_prefixes)))
